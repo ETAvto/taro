@@ -1,0 +1,828 @@
+@font-face {
+    font-family: Novelist;
+    src: url('../font/novelist/Novelist_free.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    z-index: 3;
+    overflow: hidden;
+    position: fixed;
+}
+
+
+
+.navbar-menu a:hover {
+    border-bottom: 2px solid;
+
+}
+
+.container {
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin-left: 2vmin;
+}
+
+.navbar-menu li a{
+  display: inline-block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #9F54BF;
+  margin: 0;
+
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.leon-img {
+  width: 14%;
+  margin-left: 2%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  height: 100%;
+  width: 200px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: -5px 0 15px #9F54BF;
+  transform: right 0.3s ease-in-out;
+  z-index: 999;
+  color: #9F54BF;
+  overflow: auto;
+}
+
+.show {
+  right: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: #9F54BF;
+  padding: 0.5rem 5px;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  color: #9F54BF;
+}
+
+.hidem {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hidepc {
+    display: none;
+  }
+
+  .hidem {
+    display: block;
+  }
+}
+
+#close-btn{
+  position: absolute;
+  right: 12%;
+}
+
+.flex-menu {
+  position: absolute;
+  right: 8%;
+  top: 25px;
+  margin: 0;
+  margin-right: 5%;
+}
+
+.image-blok-one {
+    width: 100%;
+    
+}
+
+/* Консультация таролога Владлены */
+.title {
+    font-family: 'Novelist';
+    font-style: normal;
+    font-weight: 20;
+    font-size: 5vmin;
+    line-height: 8vmin;
+    /* or 150% */
+    align-items: center;
+    margin-top: 5vmin;
+    color: #9F54BF;
+}
+
+.image-leon {
+    width: 29vmin;
+    margin: 0;
+    margin-top: 40%;
+}
+
+.flex-blok {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#blok-one {
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Mask_group5.png);
+    
+}
+
+.image-component {
+    position: absolute;
+    top: 7.2vmin;
+    right: -4.4vmin;
+    width: 38vmin;
+}
+
+.image-bloks {
+    position: relative;
+    margin-top: 5vmin;
+    margin-bottom: 10vmin;
+    margin-left: 5vmin;
+}
+
+
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vmin;
+    color: #000000;  
+    width: 50vmin;
+}
+
+/* Rectangle 7 */
+.buttom {
+    width: 25%;
+    height: 4vmin;
+    background: #9F54BF;
+    border-radius: 28px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    margin-top: 2vmin;
+    font-size: 1.3vmin;
+}
+
+img.image-component {
+    animation: 0s linear 0s normal none infinite running image-component;
+    -webkit-animation: 70s linear 0s normal none infinite running image-component;
+  }
+
+  @keyframes image-component {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes image-component {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .title1 {
+    font-family: 'Novelist';
+    font-style: normal;
+    color: #9F54BF;
+    font-weight: 20;
+    font-size: 5vmin;
+    line-height: 8vmin;
+    text-align: center;
+  }
+
+  .flex-blok2 {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.paragraph2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3vmin;
+    color: #9F54BF;  
+    width: 65vmin;
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.image-woman {
+    width: 30vmin;
+    margin: 0;
+}
+
+:root {
+    --bg-angle: 90deg;
+  }
+
+.image-ram {
+    /* Rectangle 76 */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 70px;
+    border: 10px solid transparent;
+}
+
+.margin-blok2 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bloks3 {
+  background-image: url(../img/maxresdefault1.png);
+  z-index: 10;
+}
+
+.image-ram {
+  background:
+    linear-gradient(
+      to bottom,
+      #fffffF,
+      #fffffF
+    )
+    padding-box,
+    conic-gradient(
+      from var(--bg-angle),
+      #C0F3EF 0%,
+      rgba(192, 121, 222, 0.66) 49.5%, 
+      rgba(192, 243, 239, 0.5) 100%
+    )
+    border-box;
+}
+
+  .paragraph3-1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vmin;
+    color: #9F54BF;  
+    width: 25vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .display-flex1 {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .display {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-style{
+    width: 5vmin;
+    height: 5vmin;
+    margin-left: 2vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    margin-right: 1vmin;
+  }
+
+
+.bloks3 {
+    background: linear-gradient(#97dfdb 60%,rgba(159, 84, 191, 0.63)) 
+  }
+
+  .title2 {
+    font-family: 'Novelist';
+    font-style: normal;
+    color: #000000;
+    font-weight: 20;
+    font-size: 5vmin;
+    line-height: 8vmin;
+    text-align: center;
+    padding-top: 5vmin;
+  }
+
+.image-vector2 {
+  position: absolute;
+  bottom: 2.8vmin;
+  left: 2.5vmin;
+  width: 30vmin;
+}
+
+.image-vector1 {
+  width: 35vmin;
+  height: 100%;
+  margin: 0;
+  margin-top: 5vmin;
+}
+
+.blok-card1 {
+  position: relative;
+  left: 2vmin;
+}
+
+.blok-card2 {
+  position: relative;
+  z-index: 1;
+}
+
+.blok-card3 {
+  position: relative;
+  right: 2vmin;
+}
+
+.flex-card {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-vector3 {
+  position: absolute;
+  bottom: 2.7vmin;
+  left: 2vmin;
+  width: 26vmin;
+}
+
+.image-vector4 {
+  width: 30vmin;
+  height: 100%;
+  margin: 0;
+
+}
+
+.image-vector5 {
+  position: absolute;
+  bottom: 2.9vmin;
+  left: 2.5vmin;
+  width: 30vmin;
+  
+}
+
+.image-vector6 {
+  width: 35vmin;
+  height: 100%;
+  margin: 0;
+  margin-top: 5vmin;
+}
+
+.margin-card {
+  padding-bottom: 2vmin;
+}
+
+.title-card1 {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 2.1vmin;
+  line-height: 8vmin;
+  transform: rotate(-15.05deg);
+  top: 10vmin;
+  left: 7vmin;
+}
+
+.paragraph-card1 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 2;
+  font-size: 1.5vmin;
+  line-height: 1.6vmin;
+  text-align: left;
+  transform: rotate(-15.05deg);
+  top: 30vmin;
+  left: 9.5vmin;
+  width: 20vmin;
+}
+
+.button-card1 {
+    position: absolute;
+    width: 44%;
+    height: 3vmin;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    font-size: 1.3vmin;
+    transform: rotate(-15.05deg);
+    top: 40vmin;
+    left: 13vmin;
+    z-index: 11;
+}
+
+.title-card2 {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 2.1vmin;
+  line-height: 8vmin;
+  top: 2.5vmin;
+  left: 9vmin;
+}
+
+.paragraph-card2 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 1.5vmin;
+  line-height: 1.6vmin;
+  text-align: left;
+  top: 27vmin;
+  left: 3.2vmin;
+  width: 23vmin;
+}
+
+.button-card2 {
+    position: absolute;
+    width: 60%;
+    height: 3.5vmin;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    font-size: 1.3vmin;
+    top: 38vmin;
+    left: 6vmin;
+    z-index: 12;
+}
+  
+.title-card3 {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 2.1vmin;
+  line-height: 8vmin;
+  transform: rotate(15.05deg);
+  top: 10vmin;
+  left: 14.5vmin;
+}
+
+.paragraph-card3 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 1.5vmin;
+  line-height: 1.6vmin;
+  text-align: left;
+  transform: rotate(15.05deg);
+  top: 27vmin;
+  left: 6.5vmin;
+  width: 20vmin;
+}
+
+.button-card3 {
+    position: absolute;
+    width: 44%;
+    height: 3vmin;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    font-size: 1.3vmin;
+    transform: rotate(15.05deg);
+    top: 40vmin;
+    left: 6.5vmin;
+    z-index: 10;
+}
+
+.image-fog {
+  position:absolute;
+  width: 98%;
+  max-width: 99%;
+  height: 88vmin;
+  opacity: 0.2;
+  z-index: 2;
+
+}
+
+.image-stars {
+  position:absolute;
+  width: 98vmin;
+  height: 80vmin;
+  opacity: 0.7;
+  z-index: 2;
+
+}
+
+.image-fog2 {
+  position:absolute;
+  width: 98%;
+  max-width: 99%;
+  height: 88vmin;
+  opacity: 0.2;
+
+}
+
+
+.rowspan2 {
+  background-image: url(../img/Mask_group6.png);
+  width: 32vmin;
+  height: 40vmin;
+  border-radius: 15px;
+  color: white;
+  text-align: start;
+}
+
+.colspan2 {
+  background-image: url(../img/Mask_group7.png);
+  width: 30vmin;
+  height: 32vmin;
+  border-radius: 15px;
+}
+
+.col1 {
+  background-image: url(../img/Mask_group8.png);
+  width: 43.5vmin;
+  height: 32vmin;
+  border-radius: 15px;
+}
+
+.col2 {
+  background-image: url(../img/Mask_group9.png);
+  width: 32vmin;
+  height: inherit;
+  border-radius: 15px;
+}
+
+.table-style {
+  position: relative; 
+}
+
+table {
+  border-spacing: 2vmin;
+  text-align: center;
+  margin: auto;
+}
+
+.title3 {
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #9F54BF;
+  font-weight: 20;
+  font-size: 5vmin;
+  line-height: 8vmin;
+  text-align: center;
+  padding-top: 5vmin;
+}
+
+.title4 {
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #000000;
+  font-weight: 20;
+  font-size: 5vmin;
+  line-height: 8vmin;
+  text-align: center;
+  padding-top: 5vmin;
+}
+
+.title-rowspan {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 4vmin;
+  line-height: 8vmin;
+  top: 2vmin;
+  left: 5%;
+}
+
+.title-colspan {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 4vmin;
+  line-height: 8vmin;
+  top: 2vmin;
+  left: 35%;
+}
+
+.title-col1 {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 4vmin;
+  line-height: 8vmin;
+  top: 35vmin;
+  left: 35%;
+}
+
+.title-col2 {
+  position: absolute;
+  font-family: 'Novelist';
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 10;
+  font-size: 4vmin;
+  line-height: 5vmin;
+  top: 36vmin;
+  left: 73%;
+  width: 15vmin;
+}
+
+.flex3-bloks3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.image-bloks3 {
+  position: relative;
+}
+
+.image3-circle-bloks3 {
+  width: 15vmin;
+}
+
+.image3-ram-bloks3 {
+  width: 19.6vmin;
+  position: absolute;
+  left: -2.4vmin;
+  top: -2.5vmin;
+}
+
+.paragraph3-bloks3 {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 2%;
+  width: 75vmin;
+  font-size: 1vmax;
+}
+
+.flex2-bloks3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.image2-circle-bloks3 {
+  width: 15vmin;
+}
+
+.image2-ram-bloks3 {
+  width: 19.6vmin;
+  position: absolute;
+  left: -2.4vmin;
+  top: -2.5vmin;
+}
+
+.paragraph2-bloks3 {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 2%;
+  width: 75vmin;
+  font-size: 1vmax;
+}
+
+.grid {
+  display: grid;
+}
+
+.card1-blok3 {
+  grid-area: 1/1;
+  position:relative;
+  right: 1900px;
+}
+
+.card1-show {
+  grid-area: 1/1;
+  right: 0;
+  animation-duration: .9s;
+  animation-name: slidein;
+}
+
+.card2-blok3 {
+  grid-area: 1/1;
+  position:relative;
+  right: 1900px;
+}
+
+.card2-show {
+  grid-area: 1/1;
+  right: 0;
+  animation-duration: .9s;
+  animation-name: slidein;
+}
+
+.card3-blok3 {
+  grid-area: 1/1;
+  position:relative;
+  right: 1900px;
+}
+
+.card3-show {
+  position: relative;
+  grid-area: 1/1;
+  right: 0;
+  animation-duration: .9s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    left: -1000px;
+  }
+
+  25% {
+    left: 10px;
+  }
+
+  50% {
+    left: -7px;
+  }
+
+  75% {
+    left: 4px;
+  }
+
+  to {
+    left: 0%;
+  }
+}
